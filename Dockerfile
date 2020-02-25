@@ -1,4 +1,4 @@
-FROM arm32v7/node:8 as node_cache
+FROM arm32v7/debian:stretch-slim 
 
 
 #Install git
@@ -9,8 +9,7 @@ RUN mkdir /home/ \
             git clone https://github.com/Eba-M/E3DC-Control.git
 #Compile
 RUN cd E3DC-Control make
-# Restore node modules
-RUN npm install
+
 
 WORKDIR /home/E3DC-Control
 USER root
