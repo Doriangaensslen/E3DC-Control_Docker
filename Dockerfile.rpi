@@ -8,7 +8,7 @@ COPY package*.json .
 
 #Install git
 RUN apt-get update \        
-    apt-get install -y git screen g++
+    apt-get install -y git screen g++ build-essential
 RUN mkdir /home/ \      
            cd /home/ \        
             git clone https://github.com/Eba-M/E3DC-Control.git
