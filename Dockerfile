@@ -18,9 +18,10 @@ RUN mv /E3DC-Control_Docker/e3dc.config.txt /E3DC-Control/e3dc.config.txt
 RUN mv /E3DC-Control_Docker/E3DC_CONF.h.txt /E3DC-Control/E3DC_CONF.h
 
 #Compile
+WORKDIR /E3DC-Control 
 RUN cd /E3DC-Control 
 RUN ls
-RUN Makefile
+RUN cd /E3DC-Control make
 RUN cd /E3DC-Control_Docker
 RUN ls
 RUN chmod 777 /E3DC-Control/e3dc.sh
