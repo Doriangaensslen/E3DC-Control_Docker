@@ -15,6 +15,7 @@ RUN apt-get install -y git screen g++ build-essential screen
 #Compile
 RUN cd E3DC-Control make
 RUN cd E3DC-Control_Docker
+RUN ls
 RUN chmod 777 e3dc.sh
 
 WORKDIR /home/E3DC-Control_Docker
