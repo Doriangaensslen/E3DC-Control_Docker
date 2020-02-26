@@ -22,7 +22,7 @@ RUN ls
 RUN cd /E3DC-Control make
 RUN cd /E3DC-Control_Docker
 RUN ls
-RUN chmod 777 /E3DC-Control/e3dc.sh
+RUN chmod 777 /E3DC-Control_Docker/e3dc.sh
 
 
 
