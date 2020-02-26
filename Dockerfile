@@ -9,6 +9,8 @@ RUN apt-get update \
 RUN cd /home/
 RUn git config http.sslVerify false
 RUN git clone https://github.com/Eba-M/E3DC-Control.git
+RUN git clone https://github.com/merlin2533/E3DC-Control_Docker.git
+
 RUN apt-get install -y git screen g++ build-essential
 #Compile
 RUN cd E3DC-Control make
