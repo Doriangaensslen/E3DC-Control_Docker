@@ -1,4 +1,4 @@
-FROM arm32v7/debian:stretch-slim 
+FROM cmosh/alpine-arm
 
 
 #Install git
