@@ -19,6 +19,7 @@ RUN mv /E3DC-Control_Docker/E3DC_CONF.h.txt /E3DC-Control/E3DC_CONF.h
 
 #Compile
 RUN cd /E3DC-Control 
+RUN ls
 RUN Makefile
 RUN cd /E3DC-Control_Docker
 RUN ls
