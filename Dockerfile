@@ -5,8 +5,6 @@ FROM ubuntu:18.04
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git
     
-    
-RUN cd /home/
 RUN git config --global http.sslVerify false
 RUN git clone https://github.com/Eba-M/E3DC-Control.git
 RUN git clone https://github.com/merlin2533/E3DC-Control_Docker.git
