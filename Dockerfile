@@ -2,6 +2,9 @@
 FROM resin/armv7hf-debian-qemu
 RUN [ "cross-build-start" ]
 
+#QEMU
+apt install -y qemu qemu-user-static qemu-user binfmt-support
+
 #Install git
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git
