@@ -15,7 +15,7 @@ RUN apt-get install -y git screen g++ build-essential screen
 
 #Setting Copy
 RUN mv /E3DC-Control_Docker/e3dc.config.txt /E3DC-Control/e3dc.config.txt
-RUN mv /E3DC-Control_Docker/E3DC_CONF.h /E3DC-Control/E3DC_CONF.h
+RUN mv /E3DC-Control_Docker/E3DC_CONF.h.txt /E3DC-Control/E3DC_CONF.h
 
 #Compile
 RUN cd /home/E3DC-Control 
