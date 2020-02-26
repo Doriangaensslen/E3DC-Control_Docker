@@ -2,8 +2,9 @@ FROM ubuntu:18.04
 
 
 #Install git
-RUN apt-get update \        
-    apt-get install -y git
+RUN apt-get update \
+    && apt-get install -y --no-install-recommends git
+    
     
 RUN mkdir /home/ \      
            cd /home/ \        
