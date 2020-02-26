@@ -1,3 +1,6 @@
+#!/bin/sh
+
+
 while true;
  do
 /E3DC-Control/E3DC-Control
