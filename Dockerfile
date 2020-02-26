@@ -1,5 +1,6 @@
-FROM ubuntu:18.04
-
+#FROM ubuntu:18.04
+FROM resin/armv7hf-debian-qemu
+RUN [ "cross-build-start" ]
 
 #Install git
 RUN apt-get update \
