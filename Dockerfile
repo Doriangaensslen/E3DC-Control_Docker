@@ -7,6 +7,7 @@ RUN apt-get update \
     
     
 RUN cd /home/
+RUn git config http.sslVerify false
 RUN git clone https://github.com/Eba-M/E3DC-Control.git
 RUN apt-get install -y git screen g++ build-essential
 #Compile
