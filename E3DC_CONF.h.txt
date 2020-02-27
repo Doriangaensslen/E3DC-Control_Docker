@@ -13,12 +13,12 @@
 #endif /* E3DC_CONF_h */
 // Konfigurationsdatei
 #define CONF_FILE "e3dc.config.txt"
-#define CONF_PATH "/Users/eberhardmayer/Documents/E3DC/"
+#define CONF_PATH "/E3DC-Control/"
 
-#define WURZELZAEHLER 0;     // 0 = interner Zähler 6 = externer Zähler
+#define WURZELZAEHLER 6;     // 0 = interner Zähler 6 = externer Zähler
 
 #define LADESCHWELLE 50;     // bis zur dieser Schwelle wird geladen bevor die Regelung beginnt
-#define LADEENDE 80;         // Zielwert bis Ende Regelung, dannach wird Ladung auf 93% weiter geregelt und dann ab SOMMERLADEENDE freigegeben
+#define LADEENDE 90;         // Zielwert bis Ende Regelung, dannach wird Ladung auf 93% weiter geregelt und dann ab SOMMERLADEENDE freigegeben
 #define UNTERERLADEKORRIDOR  900 // die Ladeleistung soll zwischen dem unteren und
 #define OBERERLADEKORRIDOR  1500 // oberere Ladeleistung liegen, jedoch
 #define MINIMUMLADELEISTUNG  500 // immer > MINIMUMLADELEISTUNG
