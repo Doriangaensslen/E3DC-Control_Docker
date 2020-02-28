@@ -17,7 +17,7 @@
 
 #define WURZELZAEHLER 6;     // 0 = interner Zähler 6 = externer Zähler
 
-#define LADESCHWELLE 50;     // bis zur dieser Schwelle wird geladen bevor die Regelung beginnt
+#define LADESCHWELLE 40;     // bis zur dieser Schwelle wird geladen bevor die Regelung beginnt
 #define LADEENDE 90;         // Zielwert bis Ende Regelung, dannach wird Ladung auf 93% weiter geregelt und dann ab SOMMERLADEENDE freigegeben
 #define UNTERERLADEKORRIDOR  900 // die Ladeleistung soll zwischen dem unteren und
 #define OBERERLADEKORRIDOR  1500 // oberere Ladeleistung liegen, jedoch
