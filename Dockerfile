@@ -5,6 +5,10 @@ RUN [ "cross-build-start" ]
 #Install git
 RUN apt-get update \
     && apt-get install -y --no-install-recommends git
+#QEMU
+RUN apt-get update && apt-get install -y --no-install-recommends qemu-user-static binfmt-support
+RUN update-binfmts --enable qemu-arm
+RUN update-binfmts --display qemu-arm
     
 RUN git config --global http.sslVerify false
 RUN git clone https://github.com/Eba-M/E3DC-Control.git
