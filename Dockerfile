@@ -31,4 +31,4 @@ Run ls
 RUN chmod 777 /E3DC-Control_Docker/e3dc.sh
 
 WORKDIR /E3DC-Control_Docker
-RUN /E3DC-Control_Docker/e3dc.sh
+CMD /E3DC-Control_Docker/e3dc.sh
